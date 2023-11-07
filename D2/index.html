@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrazione e Contatore</title>
+  </head>
+<style>
+    html.dark {
+        color-scheme: dark;
+    }
+</style> 
+ <body>
+    <h1>Form di Registrazione</h1>
+
+    <label for="name">Nome:</label>
+    <input type="text" id="name" placeholder="Inserisci il tuo nome" />
+    <button onclick="salvaNome()">Salva Nome</button>
+    <button onclick="rimuoviNome()">Rimuovi Nome</button>
+    <button id="setDark">Dark Mode</button>
+    <button id="remDark">Light Mode</button>
+    <div>
+      <span>Nome precedentemente salvato:</span>
+      <span id="nomeSalvato"></span>
+    </div>
+    <div>
+      <span>Tempo trascorso (secondi):</p>
+      <span id="counter"></span>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
